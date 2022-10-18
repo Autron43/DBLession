@@ -1,11 +1,11 @@
 ﻿using DB.Models;
 using Microsoft.EntityFrameworkCore;
-using mPHR.Services.Database.Models;
-using File = mPHR.Services.Database.Models.File;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using File = DB.Models.File;
 
 namespace DB.EnumFields
 {
-  public class DBContext : DbContext
+  public class args : DbContext
   {
     public DbSet<AccessLog> AccessLogs { get; set; }
     public DbSet<Account> Accounts { get; set; }
@@ -18,7 +18,7 @@ namespace DB.EnumFields
     public DbSet<AccountLineSetting> AccountLineSettings { get; set; }
     public DbSet<AccountNotificationLog> AccountNotificationLogs { get; set; }
     public DbSet<AccountNotificationSetting> AccountNotificationSettings { get; set; }
-    public DbSet<AccountRole> AccountRoles { get; set; }     
+    public DbSet<AccountRole> AccountRoles { get; set; }
     public DbSet<AccountUserAgreement> AccountUserAgreements { get; set; }
     public DbSet<ApiLog> ApiLogs { get; set; }
     public DbSet<AtkRecords> AtkRecords { get; set; }
@@ -38,7 +38,7 @@ namespace DB.EnumFields
     public DbSet<Event> Events { get; set; }
     public DbSet<EventApplication> EventApplications { get; set; }
     public DbSet<File> Files { get; set; }
-    public DbSet<FirebaseToken> FirebaseTokens{ get; set; }
+    public DbSet<FirebaseToken> FirebaseTokens { get; set; }
     public DbSet<FormRecommend> FormRecommends { get; set; }
     public DbSet<FormSubject> FormSubjects { get; set; }
     public DbSet<HealthPassbook> HealthPassbooks { get; set; }
@@ -103,6 +103,16 @@ namespace DB.EnumFields
 
 
   }
+  class hasKey1
+  {
+    
+    ModelBuilder.Entity<OrganizationKioskVideo>(BuildAction: EntityTypeBuilder<OrganizationKioskVideo> Entity =>
+      {
+      entity.HasKey(OrganizationKioskVideo keyExpression: e => new { e.OrganizationId.e.FileId
+         });
+    });
+  }
+
 }
 
 

@@ -3,7 +3,7 @@ using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace mPHR.Services.Database.Models
+namespace DB.Models
 {
   /// <summary>
   /// 存放腳本觸發類別為 ScheduleDay 的 JobId

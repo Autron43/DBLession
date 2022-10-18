@@ -2,8 +2,10 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using DB.EnumFields;
+using DB.Models;
 
-namespace mPHR.Services.Database.Models
+namespace DB.Models
 {
 
   public class Organization
@@ -126,4 +128,10 @@ namespace mPHR.Services.Database.Models
     #endregion
 
   }
+  //class db
+  //{
+  //  Organization organization = new Organization();
+  //  IEnumerable<Organization> query = from args in organization
+  //                                    select Organization.Name;
+  //}
 }

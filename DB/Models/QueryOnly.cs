@@ -1,4 +1,4 @@
-﻿namespace mPHR.Services.Database.Models
+﻿namespace DB.Models
 {
   /// <summary>
   /// 本類別只用做查詢，不產生實際表單

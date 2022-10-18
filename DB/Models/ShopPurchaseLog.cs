@@ -1,11 +1,11 @@
 ﻿
-using mPHR.Services.Database.EnumFields;
+using DB.EnumFields;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace mPHR.Services.Database.Models
+namespace DB.Models
 {
   /// <summary>
   /// 舊: ShopItemLog 購買紀錄

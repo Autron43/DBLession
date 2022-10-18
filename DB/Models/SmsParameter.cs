@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace mPHR.Services.Database.Models
+namespace DB.Models
 {
   public class SmsParameter
   {

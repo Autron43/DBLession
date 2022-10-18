@@ -1,8 +1,10 @@
 ﻿
+using Microsoft.EntityFrameworkCore;
+using NuGet.ProjectModel;
 using System;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace mPHR.Services.Database.Models
+namespace DB.Models
 {
   public class KpiMachineReportDetail
   {
@@ -45,5 +47,15 @@ namespace mPHR.Services.Database.Models
     public int RegisterednhiUsedTimes { get; set; }
 
     public DateTime UpdatedAt { get; set; }
+    
   }
+
+  class hasKey
+  {
+    ModelBuilder.Entity<KpiMachineReportDetail>()
+    modelBuilder.Entity<KpiMachineReportDetail>( buildAction:EntityTypeBuilder<KpiMachineReportDetail> entity=>
+      {
+      entity.HasKey(KpiMachineReportDetail keyExpression: e=>new {e.StatsAt.e.MachineId});
+  });
 }
+

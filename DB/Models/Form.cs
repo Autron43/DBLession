@@ -1,4 +1,4 @@
-﻿namespace mPHR.Services.Database.Models
+﻿namespace DB.Models
 {
   public class Form
   {

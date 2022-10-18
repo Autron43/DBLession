@@ -1,11 +1,10 @@
 ﻿
-using mPHR.Services.Database.EnumFields;
-
+using DB.EnumFields;
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace mPHR.Services.Database.Models
+namespace DB.Models
 {
   /// <summary>
   /// 個管建議 (原HealthData)

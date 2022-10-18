@@ -1,9 +1,10 @@
 ﻿
+using DB.EnumFields;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace mPHR.Services.Database.Models
+namespace DB.Models
 {
   public class AccessLog
   {

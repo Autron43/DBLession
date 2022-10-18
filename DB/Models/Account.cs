@@ -1,10 +1,11 @@
 ﻿
+using DB.EnumFields;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace mPHR.Services.Database.Models
+namespace DB.Models
 {
 
   public class Account
@@ -56,7 +57,7 @@ namespace mPHR.Services.Database.Models
     #region 關聯
 
     [ForeignKey("OrganizationId")]
-    public virtual Organization Organization { get; set; }
+    public virtual Organization? Organization { get; set; }
 
     public virtual AccountInformation AccountInformation { get; set; }
 

@@ -1,12 +1,12 @@
 ﻿
-using mPHR.Services.Database.EnumFields;
+using DB.EnumFields;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 
-namespace mPHR.Services.Database.Models
+namespace DB.Models
 {
   public class Course
   {

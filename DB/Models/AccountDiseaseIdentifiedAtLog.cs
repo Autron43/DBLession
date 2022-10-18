@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
-namespace mPHR.Services.Database.Models
+namespace DB.Models
 {
   public class AccountDiseaseIdentifiedAtLog
   {
